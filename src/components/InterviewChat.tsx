@@ -22,7 +22,7 @@ export const InterviewChat: React.FC = () => {
     if (isInterviewActive && currentCandidate && currentCandidate.currentQuestionIndex < 6 && !currentQuestion) {
       generateNextQuestion();
     }
-  }, [isInterviewActive, currentCandidate, currentQuestion]);
+  }, [isInterviewActive, currentCandidate, currentQuestion, generateNextQuestion]);
 
   useEffect(() => {
     let interval: NodeJS.Timeout;
@@ -38,7 +38,7 @@ export const InterviewChat: React.FC = () => {
     }
     
     return () => clearInterval(interval);
-  }, [timeRemaining, isPaused, isInterviewActive, currentQuestion]);
+  }, [timeRemaining, isPaused, isInterviewActive, currentQuestion, dispatch, handleSubmitAnswer]);
 
   const generateNextQuestion = async () => {
     if (!currentCandidate) return;
