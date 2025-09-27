@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { Card, Typography, Button, Input, Progress, Space, message } from 'antd';
 import { PlayCircleOutlined, PauseCircleOutlined, SendOutlined } from '@ant-design/icons';
 import { useDispatch, useSelector } from 'react-redux';
@@ -40,7 +40,7 @@ export const InterviewChat: React.FC = () => {
     return () => clearInterval(interval);
   }, [timeRemaining, isPaused, isInterviewActive, currentQuestion, dispatch, handleSubmitAnswer]);
 
-  const generateNextQuestion = async () => {
+  const generateNextQuestion = useCallback(async () => {
     if (!currentCandidate) return;
     
     const questionNumber = currentCandidate.currentQuestionIndex + 1;
@@ -82,9 +82,9 @@ export const InterviewChat: React.FC = () => {
       console.error('Failed to generate question:', error);
       message.error('Failed to generate question');
     }
-  };
+  }, [currentCandidate, dispatch]);
 
-  const handleSubmitAnswer = async () => {
+  const handleSubmitAnswer = useCallback(async () => {
     if (!currentQuestion || !currentCandidate) return;
     
     setIsSubmitting(true);
@@ -118,7 +118,7 @@ export const InterviewChat: React.FC = () => {
     } finally {
       setIsSubmitting(false);
     }
-  };
+  }, [currentQuestion, currentCandidate, currentAnswer, timeRemaining, dispatch, generateNextQuestion]);
 
   const completeInterviewProcess = async () => {
     if (!currentCandidate) return;
