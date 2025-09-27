@@ -1,0 +1,23 @@
+Sarah Johnson
+Full Stack Developer
+Email: sarah.johnson@email.com
+Phone: +1-555-987-6543
+
+EXPERIENCE:
+- 5 years of experience in Python, Django, and PostgreSQL
+- Expert in machine learning and data science
+- Strong background in AWS and Docker
+- Experience with microservices architecture
+- Worked on AI/ML projects and data pipelines
+
+EDUCATION:
+- Master's Degree in Computer Science
+- Stanford University, 2019
+
+SKILLS:
+- Python, Django, Flask, FastAPI
+- PostgreSQL, MongoDB, Redis
+- AWS, Docker, Kubernetes
+- Machine Learning, TensorFlow, PyTorch
+- Data Science, Pandas, NumPy
+- JavaScript, React (basic)

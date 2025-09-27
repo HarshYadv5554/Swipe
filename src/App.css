@@ -1,0 +1,126 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Custom styles for the interview app */
+.resume-upload {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.interview-chat {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ant-upload-drag {
+  border: 2px dashed #d9d9d9;
+  border-radius: 6px;
+  background: #fafafa;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.ant-upload-drag:hover {
+  border-color: #1890ff;
+}
+
+.ant-upload-drag.ant-upload-drag-hover {
+  border-color: #1890ff;
+  background: #f0f8ff;
+}
+
+/* Timer styles */
+.timer-warning {
+  color: #ff4d4f;
+  font-weight: bold;
+}
+
+.timer-critical {
+  color: #ff4d4f;
+  font-weight: bold;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0.3; }
+}
+
+/* Question difficulty indicators */
+.difficulty-easy {
+  border-left: 4px solid #52c41a;
+}
+
+.difficulty-medium {
+  border-left: 4px solid #faad14;
+}
+
+.difficulty-hard {
+  border-left: 4px solid #ff4d4f;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .ant-layout-header {
+    padding: 0 16px;
+  }
+  
+  .ant-layout-content {
+    padding: 16px;
+  }
+  
+  .resume-upload,
+  .interview-chat {
+    max-width: 100%;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}

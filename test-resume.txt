@@ -1,0 +1,23 @@
+John Smith
+Full Stack Developer
+Email: john.smith@email.com
+Phone: +1-555-123-4567
+
+EXPERIENCE:
+- 4 years of experience in React, Node.js, and MongoDB
+- Expert in JavaScript, TypeScript, and modern web technologies
+- Strong background in AWS and Docker
+- Experience with microservices architecture
+- Worked on e-commerce platforms and real-time applications
+
+EDUCATION:
+- Bachelor's Degree in Computer Science
+- University of Technology, 2020
+
+SKILLS:
+- JavaScript, TypeScript, React, Node.js
+- MongoDB, PostgreSQL, Redis
+- AWS, Docker, Kubernetes
+- REST APIs, GraphQL
+- Microservices, Serverless
+- Git, CI/CD, Agile

@@ -1,0 +1,18 @@
+John Doe
+Software Developer
+Email: john.doe@email.com
+Phone: +1-555-123-4567
+
+EXPERIENCE:
+- 3 years of experience in React and Node.js development
+- Worked on multiple full-stack applications
+- Strong knowledge of JavaScript, TypeScript, and modern web technologies
+
+EDUCATION:
+- Bachelor's Degree in Computer Science
+- University of Technology, 2020
+
+SKILLS:
+- React, Node.js, JavaScript, TypeScript
+- HTML, CSS, SQL
+- Git, Docker, AWS
